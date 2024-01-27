@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MyApp</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand" style="font-size: 50px">MyApp</a>
+            </div>
+
+            <ul class="nav navbar-nav ml-auto">
+                <li><a th:href="@{/login}">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Mobile:+918999999941</a></li>
+                        <li><a href="#">Email: myapp@gmail.com</a></li>
+                    </ul>
+                </li>
+
+                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">LogOut</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome! Let's do some awesome stuff...</h1>
+    </div>
+
+</body>
+</html>

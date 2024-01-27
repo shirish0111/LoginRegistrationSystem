@@ -1,0 +1,47 @@
+        body {
+            background-color: #f8f9fa;
+	background-image: url('/img/bg.jpg'); 
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        form {
+            background-color: #ffffff; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #28a745;
+            color: #ffffff;
+        }
+
+        button:hover {
+            background-color: #218838; 
+        }
+
+        span {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        span a {
+            color: #007bff;
+        }
+
+        span a:hover {
+            text-decoration: underline;
+        }
